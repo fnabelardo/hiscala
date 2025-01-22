@@ -2,6 +2,8 @@ package Demo
 
 object Demo {
   def main(args: Array[String]): Unit = {
-    println("Hi, world")
+    val name = "Noel"
+    val age = 37
+    println(name + " is " + age + " years old")
   }
 }

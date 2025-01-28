@@ -6,6 +6,8 @@ object Demo {
     def add(x: Int, y: Int): Int = {
       return x + y;
     }
+
+    def square(x : Int) = x * x
   }
 
   def subtract(x : Int, y : Int) : Int = {
@@ -18,6 +20,7 @@ object Demo {
 
   def main(args: Array[String]): Unit = {
     println("Math add: " + Math.add(45, 15))
+    println("Math square: " + Math.square(3));
     println("subtract: " + subtract(45, 15))
     println("multiply: " + multiply(45, 15))
     println("divide: " + divide(45, 15))

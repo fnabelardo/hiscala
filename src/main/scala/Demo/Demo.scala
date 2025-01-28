@@ -7,7 +7,9 @@ object Demo {
       println("i using to " + i)
     }
 
-
+    for (i <- 1 until 6) {
+      println("i using until " + i)
+    }
 
   }
 }

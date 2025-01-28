@@ -3,10 +3,12 @@ package Demo
 object Demo {
   def main(args: Array[String]): Unit = {
 
+    // Loop with range "to"
     for (i <- 1 to 5) {
       println("i using to " + i)
     }
 
+    // Loop with range "until"
     for (i <- 1 until 6) {
       println("i using until " + i)
     }
@@ -16,8 +18,14 @@ object Demo {
       println("i using until " + i + " " + j)
     }
 
-    val lst = List(1,2,3,4,5,6,79,54,6,98)
+    // List as range in for loops
+    val lst = List(1,2,3,4,5,6,4,5,6,98)
     for (i <- lst) {
+      println("i using lst " + i)
+    }
+
+    // List as range and if as filter in for loops
+    for (i <- lst; if i < 6) {
       println("i using lst " + i)
     }
 

@@ -13,6 +13,18 @@ object Demo {
       case 50 => println("age: " + age);
       case _ => println("default");
     }
-    
+
+    // Match as expression
+    val result = age match {
+      case 20 => age;
+      case 18 => age;
+      case 30 => age;
+      case 40 => age;
+      case 50 => age;
+      case _ => "default";
+    }
+
+    println("result = " + result)
+
   }
 }

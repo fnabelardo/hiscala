@@ -11,5 +11,10 @@ object Demo {
       println("i using until " + i)
     }
 
+    // Nested for loop
+    for (i <- 1 until 9; j <- 1 to 3) {
+      println("i using until " + i + " " + j)
+    }
+
   }
 }

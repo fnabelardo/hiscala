@@ -26,5 +26,12 @@ object Demo {
 
     println("result = " + result)
 
+    // Evaluate multiple cases
+    var i = 7;
+    i match {
+      case 1 | 3 | 5 | 7 | 9 => println("odd");
+      case 0 | 2 | 4 | 6 | 8 | 10 => println("even");
+    }
+
   }
 }

@@ -2,8 +2,10 @@ package Demo
 
 object Demo {
 
-  def add(x : Int, y : Int) : Int = {
-    return x + y;
+  object Math {
+    def add(x: Int, y: Int): Int = {
+      return x + y;
+    }
   }
 
   def subtract(x : Int, y : Int) : Int = {
@@ -15,7 +17,7 @@ object Demo {
   def divide(x : Int, y : Int) = x / y;
 
   def main(args: Array[String]): Unit = {
-    println("add: " + add(45, 15))
+    println("Math add: " + Math.add(45, 15))
     println("subtract: " + subtract(45, 15))
     println("multiply: " + multiply(45, 15))
     println("divide: " + divide(45, 15))

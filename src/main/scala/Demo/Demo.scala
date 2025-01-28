@@ -16,5 +16,10 @@ object Demo {
       println("i using until " + i + " " + j)
     }
 
+    val lst = List(1,2,3,4,5,6,79,54,6,98)
+    for (i <- lst) {
+      println("i using lst " + i)
+    }
+
   }
 }

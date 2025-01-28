@@ -29,5 +29,12 @@ object Demo {
       println("i using lst " + i)
     }
 
+    // Loop as expression - Result: List
+    val result = for {i <- lst; if i < 6} yield {
+      i * i
+    }
+
+    println("result " + result)
+
   }
 }

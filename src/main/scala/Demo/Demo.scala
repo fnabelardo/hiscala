@@ -2,18 +2,17 @@ package Demo
 
 object Demo {
 
-  object Math {
-    def add(x: Int, y: Int): Int = {
-      return x + y;
-    }
-
-    def square(x : Int) = x * x
-  }
+  def math(x: Double, y: Double, z: Double, f: (Double, Double) => Double): Double = f(f(x, y), z);
 
   def main(args: Array[String]): Unit = {
-    var add = (x: Int, y: Int) => x + y;
-    println(add(300, 200))
-    println("Math add: " + Math.add(45, 15))
-    println("Math square: " + (Math square 3));
+    println(math(50, 20, 10, (x, y) => x + y))
+    println(math(50, 20, 10, _+_)) // Equals to println(math(50, 20, 10, (x, y) => x + y))
+    println(math(50, 20, 10, (x, y) => x * y))
+    println(math(50, 20, 10, _*_)) // Equals to println(math(50, 20, 10, (x, y) => x * y))
+    println(math(50, 20, 10, (x, y) => x max y))
+    println(math(50, 20, 10, _ max _))// Equals to println(math(50, 20, 10, (x, y) => x max y))
+    println(math(50, 20, 10, (x, y) => x min y))
+    println(math(50, 20, 10, _ min _))
+
   }
 }

@@ -12,5 +12,8 @@ object Demo {
   def main(args: Array[String]): Unit = {
     println(add(20, 10)) //Output: 30
     println(add2(20)(30)); //Output: 50
+
+    val sum40 = add2(40);
+    println(sum40(100)); //Output: 140
   }
 }

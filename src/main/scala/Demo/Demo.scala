@@ -42,5 +42,11 @@ object Demo {
     print("Sum the elements list: ")
     println(sum)
 
+    //For loop
+    println("Element list")
+    for(name <- names) {
+      println(name);
+    }
+
   }
 }

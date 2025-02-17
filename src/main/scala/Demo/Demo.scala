@@ -17,5 +17,11 @@ object Demo {
     //Create list with prepended values to Nil
     println(1 :: 3 :: 8 :: Nil)
 
+    //Get the first value of the list
+    println(mylist.head)
+
+    //Get the last value of the list
+    println(names.last)
+
   }
 }

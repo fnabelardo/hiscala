@@ -29,5 +29,8 @@ object Demo {
     //Get the reverse list
     println(names.reverse)
 
+    //Fill the list
+    println(List.fill(5)(3))
+
   }
 }

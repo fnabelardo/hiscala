@@ -1,21 +1,22 @@
 package Demo
 
-// Scala - String
+// Scala - Arrays
 object Demo {
-
-  val num1 = 75;
-  val num2 = 100.25;
-  val str1 : String = "Hello World"
-  val str2 : String = " Noel"
-
+  var myarray: Array[Int] = new Array[Int](4)//Declaring Array
+  var myarray2 = new Array[Int](5)//Declaring Array
   def main(args: Array[String]): Unit = {
-    println(str1.length())
-    println(str1.concat(str2))
-    println(str1 + str2)
+    myarray(0) = 20;
+    myarray(1) = 50;
+    myarray(2) = 10;
+    myarray(3) = 30;
 
-    val result = printf("(%d --%f --%s)", num1, num2, str1);
-    println(result);//Output: (75 --100.250000 --Hello World)()
-    println("(%d --%f --%s)".format(num1, num2, str1));//Output: (75 --100.250000 --Hello World)
-    printf("(%d --%f --%s)", num1, num2, str1);//Output: (75 --100.250000 --Hello World)
+    //Print: The array
+    for (x <- myarray) {
+      println(x)
+    }
+    //Print: The array
+    for (i <- 0 to (myarray.length -1)) {
+      println(myarray(i))
+    }
   }
 }

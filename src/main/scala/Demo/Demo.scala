@@ -26,5 +26,8 @@ object Demo {
     //Check if the list is Empty
     println(mylist.isEmpty)
 
+    //Get the reverse list
+    println(names.reverse)
+
   }
 }

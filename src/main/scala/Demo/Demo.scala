@@ -35,5 +35,12 @@ object Demo {
     //Max of the list
     println(mylist.max);
 
+    mylist.foreach(println)
+    //Sum the elements list
+    var sum : Int = 0
+    mylist.foreach(sum += _)
+    print("Sum the elements list: ")
+    println(sum)
+
   }
 }

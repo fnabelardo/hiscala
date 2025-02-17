@@ -14,6 +14,8 @@ object Demo {
 
     //Prepend 0 to the first place in the list
     println(0 :: mylist)
+    //Create list with prepended values to Nil
+    println(1 :: 3 :: 8 :: Nil)
 
   }
 }

@@ -23,5 +23,8 @@ object Demo {
     //Get the last value of the list
     println(names.last)
 
+    //Check if the list is Empty
+    println(mylist.isEmpty)
+
   }
 }

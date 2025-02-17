@@ -11,5 +11,9 @@ object Demo {
     println(mylist);
     println("Names list");
     println(names);
+
+    //Prepend 0 to the first place in the list
+    println(0 :: mylist)
+
   }
 }

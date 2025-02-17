@@ -32,5 +32,8 @@ object Demo {
     //Fill the list
     println(List.fill(5)(3))
 
+    //Max of the list
+    println(mylist.max);
+
   }
 }

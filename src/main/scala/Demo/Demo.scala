@@ -36,5 +36,11 @@ object Demo {
     println(immutableSet.&(immutableSet2))          //Output: HashSet(8)
     //Or
     println(immutableSet.intersect(immutableSet2))  //Output: HashSet(8)
+
+    //Loop over set
+    immutableSet.foreach(println)
+    for (name <- names) {
+      println(name)
+    }
   }
 }

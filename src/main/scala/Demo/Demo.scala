@@ -30,6 +30,11 @@ object Demo {
     //Concatenate Sets
     println(immutableSet ++ immutableSet2)      //Output: HashSet(5, 1, 6, 9, 2, 7, 8, 19, 4, 42, 25)
     //Or
-    println(immutableSet++(immutableSet2))      //Output: HashSet(5, 1, 6, 9, 2, 7, 8, 19, 4, 42, 25)
+    println(immutableSet++(immutableSet2))
+
+    //Intersection Sets
+    println(immutableSet.&(immutableSet2))          //Output: HashSet(8)
+    //Or
+    println(immutableSet.intersect(immutableSet2))  //Output: HashSet(8)
   }
 }

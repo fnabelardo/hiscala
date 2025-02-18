@@ -8,7 +8,7 @@ import scala.collection.mutable
 object Demo {
   //Immutable set
   val immutableSet : Set[Int] = Set(1, 2, 5, 8, 9, 2)
-  val immutableSet2 : Set[Int] = Set(4, 2, 6, 8, 9, 2, 3)
+  val immutableSet2 : Set[Int] = Set(4, 42, 6, 8, 19, 25, 7)
   //Mutable set
   var mutableSet: mutable.Set[Int] = mutable.Set(1, 2, 4, 5, 7, 7)
   val names: Set[String] = Set("Jhon", "Doe", "Jane")
@@ -26,5 +26,10 @@ object Demo {
     println(immutableSet.head)
     println(immutableSet.tail)
     println(immutableSet.isEmpty)
+
+    //Concatenate Sets
+    println(immutableSet ++ immutableSet2)      //Output: HashSet(5, 1, 6, 9, 2, 7, 8, 19, 4, 42, 25)
+    //Or
+    println(immutableSet++(immutableSet2))      //Output: HashSet(5, 1, 6, 9, 2, 7, 8, 19, 4, 42, 25)
   }
 }

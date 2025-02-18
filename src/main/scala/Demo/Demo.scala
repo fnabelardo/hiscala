@@ -8,6 +8,7 @@ import scala.collection.mutable
 object Demo {
   //Immutable set
   val immutableSet : Set[Int] = Set(1, 2, 5, 8, 9, 2)
+  val immutableSet2 : Set[Int] = Set(4, 2, 6, 8, 9, 2, 3)
   //Mutable set
   var mutableSet: mutable.Set[Int] = mutable.Set(1, 2, 4, 5, 7, 7)
   val names: Set[String] = Set("Jhon", "Doe", "Jane")
@@ -20,5 +21,10 @@ object Demo {
     //Check if value exists
     println(immutableSet(9))      //Output: true.
     println(immutableSet(99))      //Output: false.
+
+    //Methods over sets: head, tail, isEmpty
+    println(immutableSet.head)
+    println(immutableSet.tail)
+    println(immutableSet.isEmpty)
   }
 }

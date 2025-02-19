@@ -20,5 +20,11 @@ object Demo {
 
     //Check if  Map is empty
     println(myMap.isEmpty); //Output: false
+
+    //Print Key and Value of Map
+    myMap.keys.foreach{ key =>
+      print("Key: " + key).toString;
+      println(" Value: " + myMap(key));
+    }
   }
 }

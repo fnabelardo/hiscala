@@ -14,5 +14,8 @@ object Demo {
 
     //Get keys of Map
     println(myMap.keys); //Output: Set(801, 802, 804)
+
+    //Get values of Map
+    println(myMap.values); // Iterable(Max, Jhon, Doe)
   }
 }

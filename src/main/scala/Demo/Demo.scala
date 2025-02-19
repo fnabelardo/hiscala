@@ -26,5 +26,9 @@ object Demo {
       print("Key: " + key).toString;
       println(" Value: " + myMap(key));
     }
+
+    //Check if Map contain a key
+    println(myMap.contains(801)); //Output: true
   }
+
 }

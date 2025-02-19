@@ -16,6 +16,9 @@ object Demo {
     println(myMap.keys); //Output: Set(801, 802, 804)
 
     //Get values of Map
-    println(myMap.values); // Iterable(Max, Jhon, Doe)
+    println(myMap.values); //Output: Iterable(Max, Jhon, Doe)
+
+    //Check if  Map is empty
+    println(myMap.isEmpty); //Output: false
   }
 }

@@ -11,6 +11,8 @@ object Demo {
     println(lst.find(_ > 6));//Output: None
     println(lst.find(_ > 2));//Output: Some(3)
 
+    //Find something in the Map map.
+    println(map.get(1));//Output: Some(Noel) - Some instance
   }
 
 }

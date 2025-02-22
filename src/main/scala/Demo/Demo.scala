@@ -11,6 +11,11 @@ object Demo {
   def main(args: Array[String]): Unit = {
     println(myTuple._1)
     println(myTuple3._2)
+
+    //Iterate over the tuple
+    myTuple.productIterator.foreach{
+      i => println(i)
+    }
   }
 
 }

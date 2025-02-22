@@ -16,6 +16,12 @@ object Demo {
     myTuple.productIterator.foreach{
       i => println(i)
     }
+
+    //Other ways to declare tuples
+    //Create tuple with 2 elements
+    println(1 -> "Noel")//Output: (1,Noel)
+    //Create tuple with 3 elements, 1 tuple and another element
+    println(1 -> "Noel" -> false)//Output: ((1,Noel),false)
   }
 
 }

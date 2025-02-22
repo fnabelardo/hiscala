@@ -9,7 +9,8 @@ object Demo {
   val myTuple3 = new Tuple2(1, "Hi");
 
   def main(args: Array[String]): Unit = {
-    println(myTuple)
+    println(myTuple._1)
+    println(myTuple3._2)
   }
 
 }
